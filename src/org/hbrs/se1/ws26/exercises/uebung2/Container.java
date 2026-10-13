@@ -2,6 +2,7 @@ package org.hbrs.se1.ws26.exercises.uebung2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Marcus Meyer / mmeye12s
@@ -14,7 +15,7 @@ public class Container {
 
     public void addMember(Member member) throws ContainerException {
         for (Member existing : members) {
-            if (existing.getID() == member.getID()) {
+            if (Objects.equals(existing.getID(), member.getID())) {
                 throw new ContainerException(existing.getID());
             }
         }

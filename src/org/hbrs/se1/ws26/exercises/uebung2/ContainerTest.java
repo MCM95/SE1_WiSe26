@@ -87,7 +87,7 @@ public class ContainerTest {
 
     // Test 9: Nicht vorhandenes Member löschen
     @Test
-    void testDeleteNonexistingMember() throws ContainerException {
+     void testDeleteNonexistingMember() {
         String result = container.deleteMember(m1.getID());
         assertTrue(result.contains("nicht in der Liste"));
         assertEquals(0, container.size());

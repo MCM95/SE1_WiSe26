@@ -1,5 +1,9 @@
-package org.hbrs.se1.ws26.exercises.uebung2;
+package se1.ws26.tests.uebung2;
 
+import org.hbrs.se1.ws26.exercises.uebung2.ConcreteMember;
+import org.hbrs.se1.ws26.exercises.uebung2.Container;
+import org.hbrs.se1.ws26.exercises.uebung2.ContainerException;
+import org.hbrs.se1.ws26.exercises.uebung2.Member;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

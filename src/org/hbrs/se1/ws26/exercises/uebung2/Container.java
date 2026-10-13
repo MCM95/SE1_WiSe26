@@ -11,7 +11,7 @@ import java.util.Objects;
 public class Container {
 
     // Objekte von Typ Member zur Laufzeit abspeichern über Klasse "ConcreteMember"
-    private List<Member> members = new ArrayList<>();
+    private final List<Member> members = new ArrayList<>();
 
     public void addMember(Member member) throws ContainerException {
         for (Member existing : members) {
